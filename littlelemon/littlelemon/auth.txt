@@ -1,0 +1,4 @@
+Admin
+User: admin
+Email: admin@littlelemon.com
+Pass: lemon@789!
