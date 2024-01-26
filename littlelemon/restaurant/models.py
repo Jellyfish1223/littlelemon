@@ -1,17 +1,17 @@
 from django.db import models
-from django.core.validators import MaxValueValidator
 
 # Create your models here.
 class Booking(models.Model):
-    id = models.PositiveBigIntegerField(primary_key=True, validators=[MaxValueValidator(99999999999)])
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=255)
-    guests = models.PositiveSmallIntegerField(validators=[MaxValueValidator(6)])
+    guests = models.PositiveSmallIntegerField()
     date = models.DateTimeField()
 
 class Menu(models.Model):
-    id = models.PositiveIntegerField(primary_key=True, validators=[MaxValueValidator(99999)])
+    id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=255)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    inventory = models.IntegerField(validators=[MaxValueValidator(5)])
+    inventory = models.IntegerField()
+    def __str__(self):
+        return "{} : {}".format(self.title, str(self.price))
 
-    
