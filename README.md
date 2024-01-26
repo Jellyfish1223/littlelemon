@@ -3,3 +3,7 @@
 
 To activate venv:
 `.\scripts\activate`
+
+API Paths
+"restaurant/menu/"
+"restaurant/booking"
