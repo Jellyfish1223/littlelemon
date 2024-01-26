@@ -2,3 +2,8 @@ Admin
 User: admin
 Email: admin@littlelemon.com
 Pass: lemon@789!
+
+User: testuser
+Email: test@little.com
+Pass: lemon@789!
+Token: 0fb203c5188c9c9179ec33eb93bc51cc1403397e
